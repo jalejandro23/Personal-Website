@@ -11,17 +11,25 @@
   will-change: filter;
   transition: filter 300ms;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .profile_pic {
   height: 6em;
   padding: 1.5em;
   max-width: 100px;
   border-radius: 50%;
 }
+.profile_pic:hover {
+  animation: logo-spin infinite 20s linear;
+}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+  animation: logo-spin infinite 20s linear;
 }
 
 @keyframes logo-spin {

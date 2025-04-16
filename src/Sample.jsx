@@ -8,6 +8,8 @@ function Sample(props) {
             </div>
             <p>{props.name}</p>
             <p>{props.name2}</p>
+            <p>{props.name3}</p>
+            <p>{props.name4}</p>
         </>
     )
 }
