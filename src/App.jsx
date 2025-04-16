@@ -7,6 +7,7 @@ import Experiences from './experiences.jsx'
 import Projects from './projects.jsx'
 import HomePage from './HomePage.jsx'
 import profile_pic from './assets/profile_pic.jpeg'
+import northwestern_logo from './assets/northwestern logo.png'
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 
 
@@ -17,10 +18,10 @@ function App() {
     <>
     <BrowserRouter>
       <div>
-      <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+      <a href="https://www.mccormick.northwestern.edu/" target="_blank">
+          <img src={northwestern_logo} className="northwestern logo" alt="Northwestern logo" />
         </a>
-        <a href="https://vite.dev" target="_blank">
+        <a href="https://www.linkedin.com/in/jayden-alejandro-726584248/" target="_blank">
           <img src={profile_pic} className="profile_pic" alt="Profile Pic" />
         </a>
       </div>
