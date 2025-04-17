@@ -1,19 +1,16 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Sample from './Sample.jsx'
 import Experiences from './experiences.jsx'
 import Projects from './projects.jsx'
 import HomePage from './HomePage.jsx'
-import profile_pic from './assets/profile_pic.jpeg'
-import northwestern_logo from './assets/northwestern logo.png'
+import profile_pic from './icons/profile_pic.jpeg'
+import northwestern_logo from './icons/northwestern logo.png'
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom'
+import { FaGithub } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // const location = useLocation()
 
   return (
     <>
@@ -22,15 +19,18 @@ function App() {
         <Route path='/' element={
           <>
             <div>
-            <a href="https://www.mccormick.northwestern.edu/" target="_blank">
-                <img src={northwestern_logo} className="northwestern logo" alt="Northwestern logo" />
-              </a>
               <a href="https://www.linkedin.com/in/jayden-alejandro-726584248/" target="_blank">
+                <FaLinkedin size={32} className="linkedin-icon"/>
+              </a>
+              <a target="_blank">
                 <img src={profile_pic} className="profile_pic" alt="Profile Pic" />
+              </a>
+              <a href="https://github.com/jalejandro23?tab=repositories" target="_blank" rel="noopener noreferrer" className="github-link">
+                <FaGithub size={32} className="github-icon"/>
               </a>
             </div>
             <h1>Jayden Alejandro</h1>
-            <h2>Computer Science @ Northwestern</h2>
+            {/* <h2>Computer Science @ Northwestern</h2> */}
             <div className="card">
               <button onClick={() => document.body.classList.toggle('dark-mode')}>
                 Change Mode Preferences
@@ -42,7 +42,9 @@ function App() {
               <NavLink to='/projects'>Projects </NavLink>
             </nav>
             <p className="read-the-docs">Click on my Profile Picture to learn more about me!</p> 
-            <Sample 
+            <p className="read-the-docs">Click on the Github Icon to learn more about the projects that I have worked on!</p> 
+            
+            <HomePage
               // name="Data Structures & Algorithms" 
               // name2="Intro to Computer Systems" 
               // name3="Foundations of Security" 

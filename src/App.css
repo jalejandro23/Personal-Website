@@ -23,13 +23,13 @@
 }
 .profile_pic:hover {
   animation: logo-spin infinite 20s linear;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.northwestern.logo:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-  animation: logo-spin infinite 20s linear;
+}
+.github-icon:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.linkedin-icon:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
