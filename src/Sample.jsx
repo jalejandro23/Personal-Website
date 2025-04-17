@@ -4,7 +4,7 @@ function Sample(props) {
     return (
         <>
             <div>
-                Relevant Courses:
+                About Me!:
             </div>
             <p>{props.name}</p>
             <p>{props.name2}</p>

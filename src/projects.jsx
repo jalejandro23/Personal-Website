@@ -1,14 +1,11 @@
 
-function Projects(props) {
+function Projects( {title} ) {
     return (
-        <>
-            <div>
-                My projects:
-            </div>
-            {/*
-            <p>{props.name}</p>
-            <p>{props.name2}</p> */}
-        </>
+        <div className="projects-page">
+            <h1>{title}</h1>
+            <p>This is the projects page!</p>
+            {/* More content would go here */}
+        </div>
     )
 }
 
