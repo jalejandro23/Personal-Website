@@ -21,6 +21,9 @@
   max-width: 100px;
   border-radius: 50%;
 }
+.theme-button {
+  font-size: 12px;
+}
 .profile_pic:hover {
   animation: logo-spin infinite 20s linear;
   filter: drop-shadow(0 0 2em #61dafbaa);

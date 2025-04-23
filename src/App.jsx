@@ -25,52 +25,44 @@ function App() {
               <a target="_blank">
                 <img src={profile_pic} className="profile_pic" alt="Profile Pic" />
               </a>
-              <a href="https://github.com/jalejandro23?tab=repositories" target="_blank" rel="noopener noreferrer" className="github-link">
+              <a href="https://github.com/jalejandro23" target="_blank" rel="noopener noreferrer" className="github-link">
                 <FaGithub size={32} className="github-icon"/>
               </a>
             </div>
             <h1>Jayden Alejandro</h1>
             {/* <h2>Computer Science @ Northwestern</h2> */}
             <div className="card">
-              <button onClick={() => document.body.classList.toggle('dark-mode')}>
+              <button onClick={() => document.body.classList.toggle('dark-mode')} className="theme-button">
                 Change Mode Preferences
               </button>
             </div>
+            
+            <HomePage/>
             <nav>
               <NavLink to='/'>Home </NavLink>
               <NavLink to='/experiences'>Experiences </NavLink>
               <NavLink to='/projects'>Projects </NavLink>
-            </nav>
-            <p className="read-the-docs">Click on my Profile Picture to learn more about me!</p> 
-            <p className="read-the-docs">Click on the Github Icon to learn more about the projects that I have worked on!</p> 
-            
-            <HomePage
-              // name="Data Structures & Algorithms" 
-              // name2="Intro to Computer Systems" 
-              // name3="Foundations of Security" 
-              // name4="Intro to AI"
-              // <p></p>
-            /> 
+            </nav> 
           </>
         } />
         <Route path='/experiences' element={
           <>
+          <Experiences title="Experiences" />
           <nav>
             <NavLink to='/'>Home </NavLink>
             <NavLink to='/experiences'>Experiences </NavLink>
             <NavLink to='/projects'>Projects </NavLink>
           </nav>
-          <Experiences title="Experiences" />
           </>
           } />
         <Route path='/projects' element={
           <>
+          <Projects title="Projects" />
           <nav>
             <NavLink to='/'>Home </NavLink>
             <NavLink to='/experiences'>Experiences </NavLink>
             <NavLink to='/projects'>Projects </NavLink>
           </nav>
-          <Projects title="Projects" />
           </>
           } />
       </Routes>
