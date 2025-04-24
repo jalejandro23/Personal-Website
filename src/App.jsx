@@ -49,9 +49,9 @@ function App() {
           <>
           <Experiences title="Experiences" />
           <nav>
-            <NavLink to='/'>Home </NavLink>
-            <NavLink to='/experiences'>Experiences </NavLink>
-            <NavLink to='/projects'>Projects </NavLink>
+            <NavLink className="width" to='/'>Home </NavLink>
+            <NavLink className="width" to='/experiences'>Experiences </NavLink>
+            <NavLink className="width" to='/projects'>Projects </NavLink>
           </nav>
           </>
           } />
