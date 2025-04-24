@@ -1,4 +1,5 @@
 import './projects.css'
+import Footer from './Footer'
 
 function Projects({ title }) {
     const projectList = [
@@ -30,6 +31,7 @@ function Projects({ title }) {
                     </a>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }

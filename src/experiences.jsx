@@ -1,4 +1,5 @@
 import './experiences.css';
+import Footer from './Footer'
 
 function ExperiencePage({ title }) {
   const experiences = [
@@ -87,6 +88,7 @@ function ExperiencePage({ title }) {
           </div>
         </div>
       ))}
+      <Footer />
     </div>
   );
 }
