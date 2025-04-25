@@ -24,10 +24,12 @@ body {
     font-size: 1.25rem; /* text-xl */
     font-weight: 600;   /* font-semibold */
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .homepage-card p {
     color: #4b5563; /* text-gray-600 */
+    text-align: left;
 }
 
 .about-header {

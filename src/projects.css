@@ -8,6 +8,7 @@
     font-size: 1.875rem; /* 3xl */
     font-weight: 700;    /* bold */
     margin-bottom: 24px;
+    text-align: left;
 }
 
 .project-grid {

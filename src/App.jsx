@@ -47,7 +47,7 @@ function App() {
         } />
         <Route path='/experiences' element={
           <>
-          <Experiences title="Experiences" />
+          <Experiences title="*experiences" />
           <nav>
             <NavLink className="width" to='/'>Home </NavLink>
             <NavLink className="width" to='/experiences'>Experiences </NavLink>
@@ -57,7 +57,7 @@ function App() {
           } />
         <Route path='/projects' element={
           <>
-          <Projects title="Projects" />
+          <Projects title="*projects" />
           <nav>
             <NavLink to='/'>Home </NavLink>
             <NavLink to='/experiences'>Experiences </NavLink>
