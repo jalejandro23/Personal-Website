@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-content">
-        <div className="footer-left">links*</div>
+        <div className="footer-left"><span style={{color: "#fbbf24" }}>*</span>links</div>
         <div className="footer-right">
           <a className="ffont" href="https://www.linkedin.com/in/jayden-alejandro-726584248/" target="_blank" rel="noopener noreferrer">
             LinkedIn

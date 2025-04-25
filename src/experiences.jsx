@@ -66,7 +66,9 @@ function ExperiencePage({ title }) {
 
   return (
     <div className="experience-page">
-      <h1>{title}</h1>
+      <h1>
+        <span style={{color: "#fbbf24" }}>*</span>{title}
+      </h1>
       {experiences.map((section, index) => (
         <div key={index} className="experience-section">
           <h2>{section.category}</h2>

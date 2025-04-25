@@ -22,7 +22,9 @@ function Projects({ title }) {
 
     return (
         <div className="projects-page">
-            <h1>{title}</h1>
+            <h1>
+                <span style={{ color: "#fbbf24" }}>*</span>{title}
+            </h1>
             <div className="project-grid">
                 {projectList.map((project, index) => (
                     <a key={index} href={project.link} className="project-card" target="_blank" rel="noopener noreferrer">
