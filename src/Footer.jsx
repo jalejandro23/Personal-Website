@@ -16,6 +16,9 @@ export default function Footer() {
           <a className="ffont" href="https://github.com/jalejandro23" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
+          <a className="ffont" href="mailto:jaydenalejandro2027@u.northwestern.edu" target="_blank" rel="noopener noreferrer">
+            Email
+          </a>
         </div>
       </div>
     </footer>

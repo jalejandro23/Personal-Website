@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import AboutMePage from './AboutMe.jsx'
 import Experiences from './experiences.jsx'
 import Projects from './projects.jsx'
 import HomePage from './HomePage.jsx'
@@ -37,19 +38,32 @@ function App() {
               </button>
             </div>
             
-            <HomePage title="about me" />
+            <HomePage />
             <nav>
-              <NavLink to='/'>Home </NavLink>
-              <NavLink to='/experiences'>Experiences </NavLink>
-              <NavLink to='/projects'>Projects </NavLink>
+              <NavLink className="width" to='/'>Home </NavLink>
+              <NavLink className="width" to='/aboutme'> About Me  </NavLink>
+              <NavLink className="width" to='/experiences'>Experiences </NavLink>
+              <NavLink className="width" to='/projects'>Projects </NavLink>
             </nav> 
           </>
         } />
+        <Route path='/aboutme' element={
+          <>
+          <AboutMePage title="about me" />
+          <nav>
+            <NavLink className="width" to='/'>Home </NavLink>
+            <NavLink className="width" to='/aboutme'> About Me  </NavLink>
+            <NavLink className="width" to='/experiences'>Experiences </NavLink>
+            <NavLink className="width" to='/projects'>Projects </NavLink>
+          </nav>
+          </>
+          } />
         <Route path='/experiences' element={
           <>
           <Experiences title="experiences" />
           <nav>
             <NavLink className="width" to='/'>Home </NavLink>
+            <NavLink className="width" to='/aboutme'> About Me  </NavLink>
             <NavLink className="width" to='/experiences'>Experiences </NavLink>
             <NavLink className="width" to='/projects'>Projects </NavLink>
           </nav>
@@ -59,9 +73,10 @@ function App() {
           <>
           <Projects title="projects" />
           <nav>
-            <NavLink to='/'>Home </NavLink>
-            <NavLink to='/experiences'>Experiences </NavLink>
-            <NavLink to='/projects'>Projects </NavLink>
+            <NavLink className="width" to='/'>Home </NavLink>
+            <NavLink className="width" to='/aboutme'> About Me  </NavLink>
+            <NavLink className="width" to='/experiences'>Experiences </NavLink>
+            <NavLink className="width" to='/projects'>Projects </NavLink>
           </nav>
           </>
           } />
