@@ -52,6 +52,7 @@
 
 .card {
   padding: 2em;
+  z-index: 101;
 }
 
 .read-the-docs {
@@ -61,4 +62,5 @@
 .width {
   padding-top: 0.25rem;
   margin: 0.25rem;
+  z-index: 100;
 }

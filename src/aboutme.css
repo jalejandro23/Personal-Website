@@ -21,15 +21,15 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 } */
 
-.homepage-card h2 {
+.aboutme-card h2 {
     font-size: 1.25rem; /* text-xl */
     font-weight: 600;   /* font-semibold */
     margin-bottom: 8px;
     text-align: left;
 }
 
-.homepage-card p {
-    color: #4b5563; /* text-gray-600 */
+.aboutme-card p {
+    color: #000; /* text-gray-600 */
     text-align: left;
 }
 
