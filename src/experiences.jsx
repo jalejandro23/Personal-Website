@@ -1,7 +1,7 @@
 import './experiences.css';
 import Footer from './Footer'
 
-function ExperiencePage({ title }) {
+function ExperiencePage() {
   const experiences = [
     {
       category: "Professional Experience",
@@ -67,7 +67,7 @@ function ExperiencePage({ title }) {
   return (
     <div className="experience-page">
       <h1>
-        <span style={{color: "#fbbf24" }}>*</span>{title}
+        <span style={{color: "#fbbf24" }}>*</span><span style={{ color: "#f0f4ff"}}>experiences</span>
       </h1>
       {experiences.map((section, index) => (
         <div key={index} className="experience-section">

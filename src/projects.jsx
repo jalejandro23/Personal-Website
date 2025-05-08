@@ -1,7 +1,7 @@
 import './projects.css'
 import Footer from './Footer'
 
-function Projects({ title }) {
+function Projects() {
     const projectList = [
         {
             name: "Discord Clone",
@@ -23,7 +23,7 @@ function Projects({ title }) {
     return (
         <div className="projects-page">
             <h1>
-                <span style={{ color: "#fbbf24" }}>*</span>{title}
+                <span style={{ color: "#fbbf24" }}>*</span><span style={{ color: "#f0f4ff"}}>projects</span>
             </h1>
             <div className="project-grid">
                 {projectList.map((project, index) => (

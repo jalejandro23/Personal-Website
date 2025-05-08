@@ -1,10 +1,10 @@
 import './aboutme.css';
 import Footer from './Footer'
 
-function AboutMePage( {title} ) {
+function AboutMePage() {
     return (
         <div>
-            <h1 className="about-h1"><span style={{ color: "#fbbf24"}}>*</span>{title}</h1>
+            <h1 className="about-h1"><span style={{ color: "#fbbf24"}}>*</span><span style={{ color: "#f0f4ff"}}>about me</span></h1>
             <div className="about-me-grid">
                 <div className="aboutme-card">
                     {/* <h2 className='about-header'> About Me! </h2> */}

@@ -67,7 +67,7 @@ function App() {
                 <FaGithub size={32} className="github-icon"/>
               </a>
             </div>
-          <AboutMePage title="about me" />
+          <AboutMePage/>
           <nav>
             <NavLink className="width" to='/'>Home </NavLink>
             <NavLink className="width" to='/aboutme'> About Me  </NavLink>
@@ -78,7 +78,7 @@ function App() {
           } />
         <Route path='/experiences' element={
           <>
-          <Experiences title="experiences" />
+          <Experiences/>
           <nav>
             <NavLink className="width" to='/'>Home </NavLink>
             <NavLink className="width" to='/aboutme'> About Me  </NavLink>
@@ -89,7 +89,7 @@ function App() {
           } />
         <Route path='/projects' element={
           <>
-          <Projects title="projects" />
+          <Projects/>
           <nav>
             <NavLink className="width" to='/'>Home </NavLink>
             <NavLink className="width" to='/aboutme'> About Me  </NavLink>
