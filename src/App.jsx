@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import './App.css'
 import AboutMePage from './aboutme.jsx'
 import Experiences from './experiences.jsx'
@@ -10,6 +10,22 @@ import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 
+function UpdateTitle() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const pathToTitle = {
+      "/": "jayden alejandro",
+      "/aboutme": "about | jayden alejandro",
+      "/experiences": "experiences | jayden alejandro",
+      "/projects": "projects | jayden alejandro",
+    };
+
+    document.title = pathToTitle[location.pathname] || "jayden alejandro";
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   // const [isDarkMode, setIsDarkMode] = useState(true);
@@ -23,6 +39,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <UpdateTitle />
       <Routes>
         <Route path='/' element={
           <>
